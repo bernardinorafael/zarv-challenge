@@ -9,14 +9,14 @@ import (
 func main() {
 	size := 10
 
-	// Cria uma matriz de 10x10 (100 elementos)
+	// Create a 10x10 matrix (100 elements)
 	matrix := make([][]int, size)
 	for i := range matrix {
 		matrix[i] = make([]int, size)
 	}
 
-	// Define as coordenadas (0, 0) e (1, 2)
-	// Para alterar as coordenadas, basta alterar os valores de `x` e `y`
+	// Define the coordinates (0, 0) and (1, 2)
+	// To change the coordinates, just change the values of `x` and `y`
 	matrix[0][0] = 1
 	matrix[1][2] = 1
 

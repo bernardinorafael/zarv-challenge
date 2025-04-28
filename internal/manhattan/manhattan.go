@@ -1,6 +1,6 @@
 package manhattan
 
-// Distance calcula a distância de Manhattan entre dois pontos em uma matriz
+// Distance calculates the Manhattan distance between two points in a matrix
 func Distance(matrix [][]int) int {
 	if len(matrix) == 0 || len(matrix[0]) == 0 {
 		return -1
@@ -15,7 +15,7 @@ func Distance(matrix [][]int) int {
 		}
 	}
 
-	// Verificamos se há exatamente dois pontos
+	// Checks if there are exactly two points
 	if len(coordinates) != 2 {
 		return -1
 	}
@@ -26,17 +26,17 @@ func Distance(matrix [][]int) int {
 	y1 := coordinates[0][1]
 	y2 := coordinates[1][1]
 
-	// calcula a distância de Manhattan: |x1-x2| + |y1-y2|
+	// Calculates the Manhattan distance: |x1-x2| + |y1-y2|
 	return abs(x1-x2) + abs(y1-y2)
 }
 
-// abs retorna o valor absoluto de um número inteiro
+// abs returns the absolute value of an integer
 func abs(x int) int {
-	// Detalhes de implementação:
+	// Details of implementation:
 	//
-	// Eu usaria `math.Abs`, mas eu iria perder em legibilidade de código,
-	// teria que fazer muitas conversões de `int` para `float64` e vice-versa,
-	// como o desafio pede que eu retorne um valor inteiro, acabei implementando `abs`
+	// I would use `math.Abs`, but I would lose in code readability,
+	// I would have to make many conversions from `int` to `float64` and vice-versa,
+	// as the challenge asks me to return an integer value, I ended up implementing `abs`
 	if x < 0 {
 		return -x
 	}
