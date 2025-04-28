@@ -15,6 +15,8 @@ func main() {
 		matrix[i] = make([]int, size)
 	}
 
+	// Define as coordenadas (0, 0) e (1, 2)
+	// Para alterar as coordenadas, basta alterar os valores de `x` e `y`
 	matrix[0][0] = 1
 	matrix[1][2] = 1
 
